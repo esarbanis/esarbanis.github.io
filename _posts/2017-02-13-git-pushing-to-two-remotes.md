@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pushing to 2 remote git repos.
+title: Seamless pushing to multiple remote git repositories.
 ---
 
 A couple of years ago we had a need in the team to keep 2 remote repositories in sync. 
