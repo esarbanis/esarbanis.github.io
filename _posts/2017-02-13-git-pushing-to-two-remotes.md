@@ -29,11 +29,7 @@ Simply add another `url` entry to that remote's configuration like so:
 ...
 ```
 
-Now, try to push to that remote:
-
-```bash
-git push origin master
-```
+Now, try to push to that remote with `git push origin master`.
 
 This will push the changes to the `master` branch on the remote repositories configured by their urls.
 So, basically tou treat the 2 repositories as if it was one.
