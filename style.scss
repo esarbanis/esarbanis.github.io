@@ -7,7 +7,7 @@
 
 @import "reset";
 @import "variables";
-// Syntax highlighting @import is at the bottom of this file
+
 
 /**************/
 /* BASE RULES */
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  color: $h1-color;
   a {
     color: inherit;
   }
@@ -53,15 +54,17 @@ h1 {
 
 h2 {
   font-size: 24px;
+  color: $h2-color;
 }
 
 h3 {
   font-size: 20px;
+  color: $h3-color;
 }
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $h4-color;
 }
 
 p {
@@ -69,11 +72,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $link-color;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: darken($link-color,20);
   }
 }
 
@@ -130,8 +133,6 @@ img {
   background: $lightGray;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -202,7 +203,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
@@ -212,7 +213,7 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 23px; 
   font-family: $helveticaNeue;
   font-size: 18px;
 
@@ -225,14 +226,18 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $white;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    
+    &:hover, &:active {
+      color: darken($navbar-hover-color,20);
+    }
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $white;
     }
   }
 }
@@ -283,7 +288,5 @@ footer {
   text-align: center;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
+@import "jekyll-mono";
