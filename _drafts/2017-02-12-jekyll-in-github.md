@@ -67,6 +67,18 @@ module.exports = () => {
 };
 ```
 
+Now we have the initialization, but we should probably have a way to start this middleware. In the example it is done like so:
+```javascript
+app.listen(3000,  () => {
+  console.log('Example app listening on port 3000!')
+})
+```
+
+Let's put that in a test case:
+
+
+----- 
+
 Great! Let's turn our attention to the next 'feature' which is registering a simple middleware in the `/` path for `GET` requests. First, we should write a test for that.
 
 This is going to be a little bit more complex, as we will need to introduce an agent for testing endpoints. In our case we choose `supertest`.
