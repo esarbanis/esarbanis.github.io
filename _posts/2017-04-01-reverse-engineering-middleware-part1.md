@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reverse engineering a middleware
+title: Reverse engineering a middleware Part1
 ---
 
 There came a time that I had to write a middleware-like application using just `es6`. So, instead of re-inventing the wheel I decided to 'borrow' the api of a very well known middleware framework, namely [expressjs](https://expressjs.com).
