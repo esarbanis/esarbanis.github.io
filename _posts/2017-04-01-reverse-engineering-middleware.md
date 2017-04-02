@@ -3,7 +3,7 @@ layout: post
 title: Reverse engineering a middleware
 ---
 
-There came a time that I had to write a middleware-like application using just `es6`. So, instead of re-inventing the wheel I decided to 'borrow' the api of a very well know middleware framework, namely [expressjs](https://expressjs.com).
+There came a time that I had to write a middleware-like application using just `es6`. So, instead of re-inventing the wheel I decided to 'borrow' the api of a very well known middleware framework, namely [expressjs](https://expressjs.com).
 
 First things first, went to the [Getting Started](https://expressjs.com/en/starter/hello-world.html) page and grabbed the 'hello world' example:
 
